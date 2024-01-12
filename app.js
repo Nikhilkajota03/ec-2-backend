@@ -32,9 +32,13 @@ app.use(cookieParser());
 
 /// USER ROUTES
 
-app.use('/api/auth',authRoute)
-app.use("/api/mak",marketTra)
-app.use("/api/auct",aucte)
+app.use('/api/auth',authRoute);
+app.use("/api/mak",marketTra);
+app.use("/api/auct",aucte);
+
+app.use("/",(req,res)=>{
+     res.send("server running");
+})
 
 
 
