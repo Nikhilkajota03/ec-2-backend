@@ -17,7 +17,7 @@ const aucte = require("./Routes/Auct")
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["http://localhost:5001"],
     method: ["GET", "POST"],
     credentials: true,
   })
